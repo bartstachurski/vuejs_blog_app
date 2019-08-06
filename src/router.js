@@ -6,7 +6,7 @@ import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import NewPost from "./views/NewPost.vue";
 import ShowPost from "./views/ShowPost.vue";
-
+import EditPost from "./views/EditPost.vue";
 
 Vue.use(Router);
 
@@ -38,6 +38,11 @@ export default new Router({
       path: "/posts/:id",
       name: "show_post",
       component: ShowPost
+    },
+    {
+      path: "/posts/:id/edit",
+      name: "edit_post",
+      component: EditPost
     },
     {
       path: "/logout",

@@ -5,6 +5,7 @@
       <h2>{{ post.title }}</h2>
       <img v-bind:src="post.image">
       <p>{{ post.body }}</p>
+      <p><router-link v-bind:to="`/posts/${post.id}`">Show Post</router-link></p>
       <hr>
     </div>
   </div>
